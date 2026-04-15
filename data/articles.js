@@ -1,0 +1,91 @@
+window.__ARTICLES_DATA__ = {
+  "metadata": {
+    "generated_at": "2026-04-15 16:04:49",
+    "sources": {
+      "qingchunbangyang": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDQ2ODM2Mg==&action=getalbum&album_id=3188102698777477122&subscene=189"
+    },
+    "article_count": 10
+  },
+  "articles": [
+    {
+      "id": "2247547681-1",
+      "category": "qingchunbangyang",
+      "title": "【青春榜样】青春赋智，科创承光—— 贾曜聪的成长答卷",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247547681&idx=1&sn=47d9be03ce42cd76c4d364f567575e17&chksm=ec1d1c44db6a95526f0741d3d671e7060ef6cf573cf8fe22ed618c5001fa34e25ad8a0e74386#rd",
+      "published_at": "2026-04-10 20:00:00",
+      "published_timestamp": 1775822400
+    },
+    {
+      "id": "2247547069-1",
+      "category": "qingchunbangyang",
+      "title": "逐梦奔跑，砺志前行——体育之星赵鹏云",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247547069&idx=1&sn=317526e6479e69aa132f4461fd10966a&chksm=ec1d1fd8db6a96ce4e4210c6343bb249c360a249ef2d684cbae7ef4906268601766c6ce289d9#rd",
+      "published_at": "2026-02-26 16:51:49",
+      "published_timestamp": 1772095909
+    },
+    {
+      "id": "2247543556-1",
+      "category": "qingchunbangyang",
+      "title": "青春跃动赛场，盾牌铿锵绽放 ——2025年体育之星张建锐",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247543556&idx=1&sn=b07b1822ad0df77070023c07922481d1&chksm=ec1d0c61db6a857707274415b5f68ac67e7862abb0f29175ff5fa6b273ebcedcda013fde39d6#rd",
+      "published_at": "2025-08-25 19:51:33",
+      "published_timestamp": 1756122693
+    },
+    {
+      "id": "2247543048-1",
+      "category": "qingchunbangyang",
+      "title": "逐梦手球：李秀文在校园中绽放体育精神之花",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247543048&idx=1&sn=c6f2f8f604be6ace62e46c51f86b9166&chksm=ec1d0e6ddb6a877bde69a471c6f8cf15a8a9e7900b5c9ffdaaa3f616992ef340683c6c02434d#rd",
+      "published_at": "2025-08-14 20:00:27",
+      "published_timestamp": 1755172827
+    },
+    {
+      "id": "2247541975-1",
+      "category": "qingchunbangyang",
+      "title": "绘梦成真 扬帆起航",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247541975&idx=1&sn=95b9daa8c8a95a46786637772cf8cbe3&chksm=ec1d03b2db6a8aa4d12236e287eb577b90d39b964e96998d0bbaf2b1a82a986b698a233e0933#rd",
+      "published_at": "2025-06-17 21:54:41",
+      "published_timestamp": 1750168481
+    },
+    {
+      "id": "2247541958-1",
+      "category": "qingchunbangyang",
+      "title": "坚毅如磐逐梦想 拼搏似火绽光芒",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247541958&idx=1&sn=d1609dfa84b0ffbca4a51b83b9d098b1&chksm=ec1d03a3db6a8ab5272d66ece4b34e79b870b7e85f56a0d807b2d4823edc3ee5f349ce0a7ed2#rd",
+      "published_at": "2025-06-11 21:29:59",
+      "published_timestamp": 1749648599
+    },
+    {
+      "id": "2247541598-1",
+      "category": "qingchunbangyang",
+      "title": "志愿领航燃青春 实干筑梦谱华章",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247541598&idx=1&sn=040f50a1a8849dbc16d34173b3051885&chksm=ec1d043bdb6a8d2d895c1a104c5c116440c382581efbc45b2e18a9647083aa7d79d690a9a295#rd",
+      "published_at": "2025-05-19 22:20:37",
+      "published_timestamp": 1747664437
+    },
+    {
+      "id": "2247541448-1",
+      "category": "qingchunbangyang",
+      "title": "劳动奏响青春旋律 奉献书写绚丽篇章",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247541448&idx=1&sn=dfb2b1e5747a944e230b4c6d8daee52d&chksm=ec1d05addb6a8cbb2579e69877ae1c8681a093d927100773075318713ebd469fffd3a10174fc#rd",
+      "published_at": "2025-05-09 16:04:04",
+      "published_timestamp": 1746777844
+    },
+    {
+      "id": "2247541437-1",
+      "category": "qingchunbangyang",
+      "title": "奋斗绘就青春 躬行铸就辉煌",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247541437&idx=1&sn=e76de6f2c1a46f98e23c11a9172c3875&chksm=ec1d05d8db6a8cce23fdfc4cce723bf1ed5f8687eaf8f619e9850c4a4bd80553bb20d88ee700#rd",
+      "published_at": "2025-05-08 21:55:54",
+      "published_timestamp": 1746712554
+    },
+    {
+      "id": "2247541424-1",
+      "category": "qingchunbangyang",
+      "title": "劳动绘就青春，实干践行使命",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247541424&idx=1&sn=ce9fef814f6165d73dd155d4b258bc90&chksm=ec1d05d5db6a8cc3b365ae9a6c91c88b8933380feb14a10c152b867d5bb438203f0a974baa9f#rd",
+      "published_at": "2025-05-07 21:19:12",
+      "published_timestamp": 1746623952
+    }
+  ]
+}
