@@ -18,6 +18,10 @@ SOURCES = {
     "qingchunbangyang": {
         "name": "青春榜样",
         "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDQ2ODM2Mg==&action=getalbum&album_id=3188102698777477122&subscene=189"
+    },
+    "guojiangfengcai": {
+        "name": "国奖风采",
+        "url": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDQ2ODM2Mg==&action=getalbum&album_id=4411270214575767559#wechat_redirect"
     }
 }
 
