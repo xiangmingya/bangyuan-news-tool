@@ -35,15 +35,15 @@ python3 -m http.server 8000
 3. `Actions` 中可手动运行 `Update News Data`
 4. 推送到 `main` 后会自动部署到 GitHub Pages，并读取最新的 `data/articles.json`
 
-## PushPlus 提醒
+## 推送提醒
 
-如果希望每天北京时间 `09:07` 自动抓取时，有新文章就给你发微信提醒：
+如果希望每天北京时间 `09:07` 自动抓取时，有新文章就同时推送到微信和插件：
 
 1. 在 GitHub 仓库里打开 `Settings -> Secrets and variables -> Actions`
-2. 新建一个 secret，名字填 `PUSHPLUS_TOKEN`
-3. 值填你自己的 PushPlus token
+2. 新建 `PUSHPLUS_TOKEN`，值填你自己的 PushPlus token
+3. 在 PushPlus 里确保已启用插件渠道
 
-工作流会在每天北京时间 `09:07` 运行；只有检测到新文章时才发送提醒。GitHub Actions 定时任务在整点更容易出现延迟，避开整点更稳。
+工作流会在每天北京时间 `09:07` 运行；只有检测到新文章时才发送提醒。脚本会调用 PushPlus 多渠道接口，同时发送到 `wechat,extension`。
 
 ## 已接入栏目
 

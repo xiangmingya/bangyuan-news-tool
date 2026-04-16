@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "data" / "articles.json"
 JS_OUTPUT_PATH = ROOT / "data" / "articles.js"
 PUSHPLUS_ENDPOINT = "https://www.pushplus.plus/send"
+PUSHPLUS_BATCH_ENDPOINT = "https://www.pushplus.plus/batchSend"
 
 SOURCES = {
     "qingchunbangyang": {
@@ -111,10 +112,8 @@ def find_new_articles(old_articles: list[dict], new_articles: list[dict]) -> lis
     return [article for article in new_articles if article.get("id") not in old_ids]
 
 
-def send_pushplus(token: str, new_articles: list[dict]) -> None:
-    if not token or not new_articles:
-        return
-
+def build_notification_text(new_articles: list[dict]) -> tuple[str, str]:
+    title = f"蚌院人物新闻有 {len(new_articles)} 篇新文章"
     lines = []
     for article in new_articles[:5]:
         lines.append(
@@ -124,15 +123,24 @@ def send_pushplus(token: str, new_articles: list[dict]) -> None:
         )
     if len(new_articles) > 5:
         lines.append(f"<br/>其余 {len(new_articles) - 5} 篇请到页面查看。")
+    return title, "<br/><br/>".join(lines)
+
+
+def send_pushplus(token: str, new_articles: list[dict]) -> None:
+    if not token or not new_articles:
+        return
+
+    title, content = build_notification_text(new_articles)
 
     payload = {
         "token": token,
-        "title": f"蚌院人物新闻有 {len(new_articles)} 篇新文章",
-        "content": "<br/><br/>".join(lines),
+        "title": title,
+        "content": content,
         "template": "html",
+        "channel": "wechat,extension",
     }
     request = urllib.request.Request(
-        PUSHPLUS_ENDPOINT,
+        PUSHPLUS_BATCH_ENDPOINT,
         data=json.dumps(payload).encode("utf-8"),
         headers={
             "Content-Type": "application/json",
