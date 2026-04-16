@@ -14,6 +14,12 @@
       --primary: #2563eb;
       --primary-dark: #1d4ed8;
       --soft: #dbeafe;
+      --green: #16a34a;
+      --green-dark: #15803d;
+      --green-soft: #dcfce7;
+      --red: #dc2626;
+      --red-dark: #b91c1c;
+      --red-soft: #fee2e2;
       --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
       --radius: 18px;
     }
@@ -109,18 +115,33 @@
     }
 
     .tag-button {
+      --button-accent: var(--primary);
+      --button-accent-dark: var(--primary-dark);
+      --button-soft: rgba(37, 99, 235, 0.16);
       padding: 10px 18px;
       background: rgba(255, 255, 255, 0.98);
-      color: var(--primary-dark);
-      border-color: rgba(37, 99, 235, 0.16);
+      color: var(--button-accent-dark);
+      border-color: var(--button-soft);
       font-size: 15px;
       font-weight: 700;
     }
 
     .tag-button.is-active {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      background: linear-gradient(135deg, var(--button-accent), var(--button-accent-dark));
       color: #fff;
-      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
+      box-shadow: 0 12px 24px color-mix(in srgb, var(--button-accent) 28%, transparent);
+    }
+
+    .tag-button[data-category="qingchunbangyang"] {
+      --button-accent: var(--green);
+      --button-accent-dark: var(--green-dark);
+      --button-soft: rgba(22, 163, 74, 0.16);
+    }
+
+    .tag-button[data-category="guojiangfengcai"] {
+      --button-accent: var(--red);
+      --button-accent-dark: var(--red-dark);
+      --button-soft: rgba(220, 38, 38, 0.16);
     }
 
     .panel {
@@ -163,14 +184,26 @@
     }
 
     .pill {
+      --pill-bg: var(--soft);
+      --pill-text: var(--primary-dark);
       display: inline-flex;
       align-items: center;
       padding: 6px 12px;
       border-radius: 999px;
-      background: var(--soft);
-      color: var(--primary-dark);
+      background: var(--pill-bg);
+      color: var(--pill-text);
       font-size: 13px;
       font-weight: 700;
+    }
+
+    .pill[data-category="qingchunbangyang"] {
+      --pill-bg: var(--green-soft);
+      --pill-text: var(--green-dark);
+    }
+
+    .pill[data-category="guojiangfengcai"] {
+      --pill-bg: var(--red-soft);
+      --pill-text: var(--red-dark);
     }
 
     .publish-time {
@@ -406,6 +439,7 @@
         const button = document.createElement("button");
         button.type = "button";
         button.className = "tag-button" + (state.activeCategory === category.id ? " is-active" : "");
+        button.dataset.category = category.id;
         button.textContent = category.name;
         button.addEventListener("click", () => {
           state.activeCategory = category.id;
@@ -441,7 +475,7 @@
         card.className = "item";
         card.innerHTML = `
           <div class="item-top">
-            <span class="pill">${escapeHtml(category ? category.name : "未分类")}</span>
+            <span class="pill" data-category="${escapeHtml(article.category || "")}">${escapeHtml(category ? category.name : "未分类")}</span>
             <span class="publish-time">发布时间：${escapeHtml(article.published_at || "")}</span>
           </div>
           <div class="meta">
