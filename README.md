@@ -37,13 +37,13 @@ python3 -m http.server 8000
 
 ## PushPlus 提醒
 
-如果希望每天 `09:00` 自动抓取时，有新文章就给你发微信提醒：
+如果希望每天北京时间 `09:07` 自动抓取时，有新文章就给你发微信提醒：
 
 1. 在 GitHub 仓库里打开 `Settings -> Secrets and variables -> Actions`
 2. 新建一个 secret，名字填 `PUSHPLUS_TOKEN`
 3. 值填你自己的 PushPlus token
 
-工作流会在每天北京时间 `09:00` 运行；只有检测到新文章时才发送提醒。
+工作流会在每天北京时间 `09:07` 运行；只有检测到新文章时才发送提醒。GitHub Actions 定时任务在整点更容易出现延迟，避开整点更稳。
 
 ## 后续扩展
 
