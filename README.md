@@ -33,7 +33,7 @@ python3 -m http.server 8000
 1. 把仓库推到 GitHub
 2. 在仓库 `Settings -> Pages` 里选择从 `main` 分支部署
 3. `Actions` 中可手动运行 `Update News Data`
-4. 页面会读取最新的 `data/articles.json`
+4. 推送到 `main` 后会自动部署到 GitHub Pages，并读取最新的 `data/articles.json`
 
 ## PushPlus 提醒
 
