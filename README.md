@@ -45,8 +45,6 @@ python3 -m http.server 8000
 
 工作流会在每天北京时间 `09:07` 运行；只有检测到新文章时才发送提醒。脚本会调用 PushPlus 多渠道接口，同时发送到 `wechat,extension`。
 
-如果要手动验证推送，可以在 `Actions -> Update News Data -> Run workflow` 时把 `force_notify` 设为 `true`。这样即使没有新文章，也会发送一条测试消息到微信和插件。
-
 ## 已接入栏目
 
 当前抓取源已包含 `青春榜样` 和 `国奖风采` 两个合集。

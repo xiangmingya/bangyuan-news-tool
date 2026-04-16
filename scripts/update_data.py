@@ -112,26 +112,6 @@ def find_new_articles(old_articles: list[dict], new_articles: list[dict]) -> lis
     return [article for article in new_articles if article.get("id") not in old_ids]
 
 
-def is_truthy(value: str) -> bool:
-    return value.strip().lower() in {"1", "true", "yes", "on"}
-
-
-def build_test_articles(payload: dict) -> list[dict]:
-    articles = payload.get("articles") or []
-    if articles:
-        return articles[:1]
-    return [
-        {
-            "id": "test-notify",
-            "category": "system",
-            "title": "测试推送：当前没有新文章，验证微信和插件渠道是否正常",
-            "url": "https://xiangmingya.github.io/bangyuan-news-tool/",
-            "published_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "published_timestamp": int(datetime.now().timestamp()),
-        }
-    ]
-
-
 def build_notification_text(new_articles: list[dict]) -> tuple[str, str]:
     title = f"蚌院人物新闻有 {len(new_articles)} 篇新文章"
     lines = []
@@ -175,22 +155,16 @@ def send_pushplus(token: str, new_articles: list[dict]) -> None:
 
 
 def main() -> int:
-    force_notify = is_truthy(os.getenv("FORCE_NOTIFY", "false"))
     existing_articles = load_existing_articles()
     payload = build_payload()
     new_articles = find_new_articles(existing_articles, payload["articles"])
-    notify_articles = new_articles
-    if force_notify and not notify_articles:
-        notify_articles = build_test_articles(payload)
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     json_text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     OUTPUT_PATH.write_text(json_text, encoding="utf-8")
     JS_OUTPUT_PATH.write_text("window.__ARTICLES_DATA__ = " + json_text, encoding="utf-8")
-    send_pushplus(os.getenv("PUSHPLUS_TOKEN", "").strip(), notify_articles)
+    send_pushplus(os.getenv("PUSHPLUS_TOKEN", "").strip(), new_articles)
     print(f"wrote {len(payload['articles'])} articles to {OUTPUT_PATH}")
     print(f"detected {len(new_articles)} new articles")
-    if force_notify and not new_articles:
-        print("force notify enabled: sent a test notification")
     return 0
 
 
