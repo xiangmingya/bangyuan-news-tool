@@ -53,6 +53,13 @@
         var(--panel);
     }
 
+    .hero-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
     .hero h1 {
       margin: 0;
       font-size: clamp(30px, 4vw, 42px);
@@ -73,7 +80,8 @@
     }
 
     .tag-button,
-    .copy-button {
+    .copy-button,
+    .hero-link {
       border: 1px solid transparent;
       border-radius: 999px;
       cursor: pointer;
@@ -81,8 +89,23 @@
     }
 
     .tag-button:hover,
-    .copy-button:hover {
+    .copy-button:hover,
+    .hero-link:hover {
       transform: translateY(-1px);
+    }
+
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 18px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
     }
 
     .tag-button {
@@ -276,15 +299,16 @@
         padding: 18px;
       }
 
-      .meta {
-        grid-template-columns: 1fr;
-      }
-
+      .hero-head,
       .list-head,
       .item-top,
       .meta-line {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .meta {
+        grid-template-columns: 1fr;
       }
 
       .field-label {
@@ -300,8 +324,11 @@
 <body>
   <main class="shell">
     <section class="hero">
-      <h1>蚌院人物新闻</h1>
-      <p>数据从仓库里的动态 JSON 读取。点复制图标即可复制标题或链接，点链接本身会新开页面打开。</p>
+      <div class="hero-head">
+        <h1>蚌院人物新闻</h1>
+        <a class="hero-link" href="http://192.168.105.71/login.jsp?inner=1" target="_blank" rel="noopener noreferrer">进入后台</a>
+      </div>
+      <p>集中查看蚌院人物相关文章，支持按栏目筛选，并快速打开原文。</p>
       <div class="toolbar" id="categoryTabs"></div>
     </section>
 
