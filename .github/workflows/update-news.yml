@@ -2,6 +2,11 @@ name: Update News Data
 
 on:
   workflow_dispatch:
+    inputs:
+      force_notify:
+        description: "即使没有新文章也发送一条测试推送"
+        required: false
+        default: "false"
   schedule:
     - cron: "7 1 * * *"
 
@@ -23,6 +28,7 @@ jobs:
       - name: Update article data
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          FORCE_NOTIFY: ${{ github.event.inputs.force_notify || 'false' }}
         run: python3 scripts/update_data.py
 
       - name: Commit updated data
