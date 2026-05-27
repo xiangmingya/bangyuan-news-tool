@@ -1,6 +1,6 @@
 window.__ARTICLES_DATA__ = {
   "metadata": {
-    "generated_at": "2026-05-26 05:12:10",
+    "generated_at": "2026-05-27 05:44:19",
     "sources": {
       "qingchunbangyang": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDQ2ODM2Mg==&action=getalbum&album_id=3188102698777477122&subscene=189",
       "guojiangfengcai": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDQ2ODM2Mg==&action=getalbum&album_id=4411270214575767559#wechat_redirect"
@@ -8,6 +8,22 @@ window.__ARTICLES_DATA__ = {
     "article_count": 20
   },
   "articles": [
+    {
+      "id": "2247548243-2",
+      "category": "guojiangfengcai",
+      "title": "国奖风采（二十四）|| 齐妙：笃学笃行担使命 向上向善践初心",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247548243&idx=2&sn=733e36ae3485a7d79fd957c935983f04&chksm=ec1d1a36db6a932038ce210d5518c59615da0b44898ecfe78e79bdd80bc9db16c2e4aa685374#rd",
+      "published_at": "2026-05-24 06:41:29",
+      "published_timestamp": 1779604889
+    },
+    {
+      "id": "2247548243-1",
+      "category": "guojiangfengcai",
+      "title": "国奖风采（二十三）|| 李莎莎：以初心筑底色 以笃行赴韶华",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247548243&idx=1&sn=ab3ed1be893a291024e296dafae4defc&chksm=ec1d1a36db6a932056cdf70a920e7887bc650d301497ad695c8f08df17efd780d9072d6c1a53#rd",
+      "published_at": "2026-05-24 06:41:29",
+      "published_timestamp": 1779604889
+    },
     {
       "id": "2247548003-2",
       "category": "guojiangfengcai",
@@ -87,22 +103,6 @@ window.__ARTICLES_DATA__ = {
       "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247546991&idx=1&sn=a2406fdd4acda3d2fa2a6b766c976329&chksm=ec1d1f0adb6a961c9cf0cc2e96a56c6c7733a2329abf7f78988d38bae696bdf76e5b519a65d4#rd",
       "published_at": "2026-02-23 05:39:13",
       "published_timestamp": 1771825153
-    },
-    {
-      "id": "2247546969-2",
-      "category": "guojiangfengcai",
-      "title": "国奖风采||西德耀: 以青春之我 践担当之路",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247546969&idx=2&sn=570d8d5ec288f26960e5f2aa00b76c65&chksm=ec1d1f3cdb6a962ac1e6a6cf21965e2a1ceeff315e43a9a4ffc87103514941c6e33eed9e708e#rd",
-      "published_at": "2026-02-22 09:59:48",
-      "published_timestamp": 1771754388
-    },
-    {
-      "id": "2247546969-1",
-      "category": "guojiangfengcai",
-      "title": "国奖风采|| 李正荣：以青春之笔绘四维成长 用奋斗之姿赴智能",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247546969&idx=1&sn=273981cbc1470b94d94bfec2b57fccd4&chksm=ec1d1f3cdb6a962a8d55e499a9c9e08d929fba3f039e6778c368a5c7ed8aa180012be16b8a9e#rd",
-      "published_at": "2026-02-22 09:59:48",
-      "published_timestamp": 1771754388
     },
     {
       "id": "2247543556-1",
