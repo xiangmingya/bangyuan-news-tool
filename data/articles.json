@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-10-22 06:03:09",
+    "generated_at": "2026-10-23 05:58:49",
     "sources": {
       "qingchunbangyang": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDQ2ODM2Mg==&action=getalbum&album_id=3188102698777477122&subscene=189",
       "guojiangfengcai": "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI5MDQ2ODM2Mg==&action=getalbum&album_id=4411270214575767559#wechat_redirect"
     },
-    "article_count": 20
+    "article_count": 18
   },
   "articles": [
     {
@@ -63,22 +63,6 @@
       "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247549812&idx=1&sn=8637e54e78ce95f88811ac299d0bb966&chksm=ec1d2411db6aad0790d84e4abf0fafca128c49c9783888a0609128b2eea88fb758a693d373b8#rd",
       "published_at": "2026-08-19 12:07:30",
       "published_timestamp": 1787141250
-    },
-    {
-      "id": "2247549798-2",
-      "category": "guojiangfengcai",
-      "title": "国奖风采（三十四）|| 黄双全：方寸芯片里的 “智能守护”",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247549798&idx=2&sn=a58048801effd81485357ed99aee8812&chksm=ec1d2403db6aad15323c21d63f2c8272c4586c23c261083d3880871ef354014692c6b628ca01#rd",
-      "published_at": "2026-08-17 04:54:32",
-      "published_timestamp": 1786942472
-    },
-    {
-      "id": "2247549798-1",
-      "category": "guojiangfengcai",
-      "title": "国奖风采（三十三）|| 张贝滢：矢志鸿鹄乘风起，淬火青春绽芳华",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MDQ2ODM2Mg==&mid=2247549798&idx=1&sn=c530b203fc3d3f8ed395605868b3ad39&chksm=ec1d2403db6aad15144e2c298ffa2cb1dbfaa58a5f7d1e99aa62ab72b04bc92b760b8e267af9#rd",
-      "published_at": "2026-08-17 04:54:32",
-      "published_timestamp": 1786942472
     },
     {
       "id": "2247549783-1",
